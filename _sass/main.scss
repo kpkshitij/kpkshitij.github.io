@@ -1,3 +1,55 @@
-.fancy-large-font {
-  font-size: 50px;
+body {
+  background-image: url("/assets/images/bg.png");
+}
+.v-centered-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-heading {
+  font-size: xx-large;
+  font-family: 'IBM Plex Mono', monospace;
+  text-decoration: underline;
+}
+
+.custom-cv-box {
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 50%;
+  width: 200px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: black;
+  color: white;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.custom-character-img-box {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  bottom: 0;
+  left: 50%;
+  color: white;
+  transform: translateX(-50%);
+  font-size: xx-large;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow: hidden;
+  transition-duration: 500ms;
+
+  img {
+    width: 100%;
+  }
+
+  &:hover {
+    height: 200px;
+    transition-duration: 500ms;
+  }
 }
