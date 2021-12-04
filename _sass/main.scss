@@ -1,3 +1,6 @@
+@import "./variables.scss";
+@import "./projects.scss";
+
 body {
   background-image: url("/assets/images/bg.png");
 }
@@ -10,9 +13,17 @@ body {
 }
 
 .main-heading {
-  font-size: xx-large;
-  font-family: 'IBM Plex Mono', monospace;
-  text-decoration: underline;
+  font-size: 3.6rem;
+  font-family: $font_heading;
+/*  text-decoration: underline;*/
+}
+
+a.special-link {
+  color: black;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;  
+    }
 }
 
 .custom-cv-box {
