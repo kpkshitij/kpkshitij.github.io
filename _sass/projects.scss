@@ -17,9 +17,10 @@
     }
 }
 
-#project-a {
+#project-page {
     .main-heading {
         margin-top: 30px;
+        text-decoration: underline;
     }
     .sub-heading {
         font-weight: bold;
@@ -28,6 +29,12 @@
     }
     .custom-text-yellow {
         color: $color_golden;
+    }
+    .custom-text-grey {
+        color: $color_grey;
+    }
+    .custom-text-purple {
+        color: $color_purple;
     }
     font-family: $font_text;
     font-size: 2.0rem;
