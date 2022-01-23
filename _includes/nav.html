@@ -1,0 +1,28 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav me-auto">
+
+      {% for item in site.data.nav limit:3 %}
+        <li class="nav-item mx-3 mt-3 mb-1">
+          <a class="nav-link{% if page.url == item.link %} active{% endif %}" aria-current="page" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+
+      {% for item in site.data.nav offset:continue %}
+        <li class="nav-item mx-3 mt-3 mb-1">
+          <a class="nav-link{% if page.url == item.link %} active{% endif %}" aria-current="page" href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+
+    </div>
+  </div>
+</nav>

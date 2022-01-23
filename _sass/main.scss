@@ -6,7 +6,7 @@ body {
 }
 .v-centered-container {
   display: flex;
-  height: 100vh;
+  height: 85vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,7 @@ a.special-link {
   font-size: xx-large;
   font-family: 'IBM Plex Mono', monospace;
   overflow: hidden;
-  transition-duration: 500ms;
+  transition-duration: 300ms;
 
   img {
     width: 100%;
@@ -61,7 +61,7 @@ a.special-link {
 
   &:hover {
     height: 200px;
-    transition-duration: 500ms;
+    transition-duration: 200ms;
   }
 }
 
@@ -71,4 +71,9 @@ a.special-link {
 
 .mt-large {
   margin-top: 7rem;
+}
+
+#navbarContent {
+  font-size: x-large;
+  font-family: $font_heading;
 }
